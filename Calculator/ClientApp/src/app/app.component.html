@@ -1,10 +1,29 @@
 <div class='container-fluid'>
   <div class='row'>
-    <div class='col-sm-3'>
-      <app-nav-menu></app-nav-menu>
-    </div>
-    <div class='col-sm-9 body-content'>
-      <router-outlet></router-outlet>
+    <div class='col-sm-12 body-content'>
+        <div class="box">
+          <div class="display">
+            <input type="text" value="{{Result}}" readonly size="18" id="d">
+          </div>
+          <div class="keys">
+            <p>
+              <input type="button" class="button gray" value="mrc" (click)='Click("")'><input type="button" class="button gray" value="m-" (click)='Click("")'><input type="button" class="button gray" value="m+" (click)='Click("")' /><input type="button" class="button pink" value="/" onclick='v("/")'>
+            </p>
+            <p>
+              <input type="button" class="button black" value="7" (click)='Click("7")'><input type="button" class="button black" value="8" (click)='Click("8")'><input type="button" class="button black" value="9" (click)='Click("9")'><input type="button" class="button pink" value="*" (click)='Click("*")'>
+            </p>
+            <p>
+              <input type="button" class="button black" value="4" (click)='Click("4")'><input type="button" class="button black" value="5" (click)='Click("5")'><input type="button" class="button black" value="6" (click)='Click("6")'><input type="button" class="button pink" value="-" (click)='Click("-")'>
+            </p>
+            <p>
+              <input type="button" class="button black" value="1" (click)='Click("1")'><input type="button" class="button black" value="2" (click)='Click("2")'><input type="button" class="button black" value="3" (click)='Click("3")'><input type="button" class="button pink" value="+" (click)='Click("+")'>
+            </p>
+            <p>
+              <input type="button" class="button black" value="0" (click)='Click("0")'><input type="button" class="button black" value="." (click)='Click(".")'><input type="button" class="button black" value="C" (click)='Cclick()'><input type="button" class="button orange" value="=" (click)='EqualClick()'>
+            </p>
+          </div>
+        </div>
+      <!--<router-outlet></router-outlet>-->
     </div>
   </div>
 </div>
